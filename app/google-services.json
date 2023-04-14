@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "394891002800",
+    "project_id": "apparca-7734c",
+    "storage_bucket": "apparca-7734c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394891002800:android:8efac55e588f2840eb0c75",
+        "android_client_info": {
+          "package_name": "com.lksnext.ParkingIMoreno"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "394891002800-ovkp03l91dn499s0n768k0lqtfno7mo0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqwR9XJlUY6bxE9_hAOuyBXNSQbBIzS3Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "394891002800-ovkp03l91dn499s0n768k0lqtfno7mo0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
