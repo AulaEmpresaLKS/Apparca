@@ -47,6 +47,7 @@ public class Reservation {
     }
 
     public boolean matches(Date beginning, Date end){
+        // return beginning.before(this.end);
         return beginning.before(this.end);
     }
 
