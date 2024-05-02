@@ -16,7 +16,6 @@ buildscript {
 plugins {
     id 'com.android.application' version '7.4.1' apply false
     id 'com.android.library' version '7.4.1' apply false
-    id "jacoco"
     // id "org.sonarqube" version "4.4.1.3373"
     id "org.sonarqube" version "3.5.0.2730"
 }
@@ -30,20 +29,6 @@ sonar {
   }
 }
  
-jacoco {
-    toolVersion = "0.8.11"
-}
-
-test {
-    finalizedBy jacocoTestReport
-}
-
-jacocoTestReport {
-    dependsOn test // tests are required to run before generating the report
-    reports {
-        xml.required = true
-    }
-}
 
 allprojects {
     repositories {
