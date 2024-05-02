@@ -16,7 +16,7 @@ buildscript {
 plugins {
     id 'com.android.application' version '7.4.1' apply false
     id 'com.android.library' version '7.4.1' apply false
-      id "jacoco"
+    id "jacoco"
     id "org.sonarqube" version "4.4.1.3373"
 }
 
@@ -33,6 +33,13 @@ jacocoTestReport {
     reports {
         xml.required = true
     }
+}
+
+test {
+    finalizedBy jacocoTestReport // report is always generated after tests run
+}
+jacocoTestReport {
+    dependsOn test // tests are required to run before generating the report
 }
 
 allprojects {
